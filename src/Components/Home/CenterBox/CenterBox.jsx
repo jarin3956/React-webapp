@@ -1,6 +1,7 @@
 import React from 'react';
 import './CenterBox.scss';
 import SearchBar from '../../SearchBar/SearchBar';
+import MediaCard from '../MediaCard/MediaCard';
 
 function CenterBox() {
 
@@ -19,10 +20,10 @@ function CenterBox() {
             <div className='center-second-box' >
                 <div className="scrollable-content" >
                     <div className='scr-data'>
-                        <img src="/images/MediaData.png" alt="Noimage" className='img-fluid scr-img' />
+                        <MediaCard logoSrc="/images/medialogo1.png" picSrc="/images/mediaimg1.png" medName='Lara Leones' medId='@thewallart' />
                     </div>
                     <div className='scr-data'>
-                        <img src="/images/MediaData.png" alt="Noimage" className='img-fluid scr-img' />
+                        <MediaCard logoSrc="/images/medialogo2.png" picSrc="/images/mediaimg2.png" medName='Thomas J.' medId='@thecustomcreator' />
                     </div>
                     <div className='scr-data-spec'>
                         <div className="card-container">

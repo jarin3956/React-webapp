@@ -1,0 +1,95 @@
+.crd-media {
+  width: 100%;
+  height: 630px;
+  margin: 0 auto;
+  border-radius: 15px;
+
+  .crd-media-box div {
+    padding-top: 5px;
+    float: left;
+  }
+
+  .crd-media-box {
+    height: 60px;
+    justify-content: center;
+    padding: 30px 40px 30px 40px;
+    width: 100%;
+
+    .crd-media-logo {
+      width: 50px;
+      height: 55px;
+      overflow: hidden;
+      margin-right: 10px;
+
+      .crd-media-logo-img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .crd-media-name {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .crd-media-id {
+      font-size: 15px;
+      position: relative;
+      bottom: 3px;
+      color: rgb(146, 146, 150);
+      cursor: pointer;
+    }
+
+    .crd-media-desc {
+      position: relative;
+      top: 5px;
+
+      .pink-text {
+        color: rgb(246, 47, 167);
+      }
+
+    }
+
+    i.fa.fa-ellipsis-h {
+      font-size: 14px;
+      margin-right: 4px;
+    }
+  }
+
+  .image-container {
+    position: relative;
+
+    .heart-icon {
+      position: absolute;
+      top: 160px;
+      right: 80px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .crd-main-img {
+      width: 100%;
+      padding: 25px 40px 30px 40px;
+    }
+  }
+
+
+  .lke-cmt-shr {
+    font-size: 22px;
+    padding-left: 55px;
+
+    .media-icon{
+      color: rgba(20, 17, 17, 0.6);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .media-icon:hover{
+      color: rgba(20, 17, 17, 0.9);
+      transform: translateY(-5px);
+    }
+  }
+
+}
