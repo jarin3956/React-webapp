@@ -1,0 +1,99 @@
+.center-box {
+    flex: 0 0 50%;
+    background-color: #00000029;
+    height: 100vh;
+    display: grid;
+
+    .center-first-box {
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        height: 12vh;
+        overflow: hidden;
+        margin: 40px 15px 15px 15px;
+
+        .center-area {
+            margin-top: 22px;
+            margin-left: 25px;
+            display: flex;
+            justify-content: flex-start;
+
+            .filter-bar {
+                cursor: pointer;
+                margin-left: 400px;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .center-second-box {
+        min-height: 75vh;
+        border-radius: 15px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        -webkit-scrollbar-width: thin;
+        margin: 15px 15px 15px 15px;
+
+        .scrollable-content {
+            display: grid;
+
+            .scr-data {
+                border-radius: 15px;
+                margin-bottom: 30px;
+                background-color: #FFFFFF;
+
+                .scr-img {
+                    border-radius: 15px;
+                    width: 100%;
+                }
+            }
+
+            .scr-data-spec {
+                display: flex;
+                overflow-x: auto;
+                white-space: nowrap;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+
+                .card-container {
+                    display: flex;
+
+                    .card {
+                        flex: 0 0 auto;
+                        width: 300px;
+                        border-radius: 15px;
+                        margin-right: 10px;
+                        text-align: center;
+
+                        .last-img-sec {
+                            max-width: 100%;
+                            height: auto;
+                            height: 200px;
+                            border-radius: 15px;
+                        }
+                        .center-ltext{
+                            display: flex;
+                        }
+                    }
+                }
+
+            }
+
+            .scr-data-spec::-webkit-scrollbar {
+                display: none;
+            }
+
+        }
+    }
+
+    .center-second-box::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .center-second-box::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    .center-second-box::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}

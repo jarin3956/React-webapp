@@ -1,8 +1,14 @@
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import UserRoutes from './Routes/UserRoutes';
 
 function App() {
   return (
-    <h1>Hai</h1>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/*" element={<UserRoutes />}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

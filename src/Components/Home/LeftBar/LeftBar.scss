@@ -1,0 +1,44 @@
+.left-bar {
+    flex: 0 0 25%;
+    background-color: #00000029;
+    height: 100vh;
+    display: grid;
+    position: relative;
+    
+    
+
+    .left-first-box {
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        height: 12vh;
+        margin: 40px 15px 15px 80px;
+
+        .left-bar-title {
+            margin: 10px 10px;
+            font-size: 40px;
+            font-weight: 500;
+        }
+    }
+
+    .left-second-box {
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        height: 75vh;
+        margin: 15px 15px 80px 80px;
+
+        .left-inner{
+            display: grid;
+
+            .left-data{
+                padding-top: 8px;
+                display: flex;
+                padding-left: 50px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+            .left-data :hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

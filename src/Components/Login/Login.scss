@@ -1,0 +1,80 @@
+.login-bag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F5F5;
+
+    .login-box {
+        text-align: center;
+        background-color: #88C2BB;
+        min-height: 370px;
+        min-width: 370px;
+        border-radius: 20px;
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .login-title {
+                margin: 40px 20px;
+                font-size: 24px;
+            }
+
+            .login-input {
+                width: 80%;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                font-size: 16px;
+
+                &::placeholder {
+                    color: #999;
+                }
+            }
+
+            .login-button {
+                background-color: #747677;
+                color: rgb(239, 249, 249);
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                margin: 10px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: rgb(29, 212, 212);
+                }
+            }
+        }
+    }
+    .login-box.shake {
+        animation: shake 0.5s;
+    }
+    @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-10px);
+        }
+        40% {
+          transform: translateX(10px);
+        }
+        60% {
+          transform: translateX(-10px);
+        }
+        80% {
+          transform: translateX(10px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+}
